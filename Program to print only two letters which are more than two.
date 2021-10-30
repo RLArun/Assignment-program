@@ -1,0 +1,11 @@
+def filterstring(s: str) -> str:
+    news = s[0:2]
+    return ''
+    for i in range(2, len(s)):
+        if s[i] != s[i - 1] or s[i] != s[i - 2]:
+            news += s[i]
+    return news
+if name == 'main':
+    s = input()
+    res = filterstring(s)
+    print(res)
